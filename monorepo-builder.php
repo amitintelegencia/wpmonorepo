@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 
 use Symplify\MonorepoBuilder\Config\MBConfig;
+use Symplify\MonorepoBuilder\ComposerJsonManipulator\ValueObject\ComposerJsonSection;
+use Symplify\MonorepoBuilder\ValueObject\Option;
 use Symplify\MonorepoBuilder\Release\ReleaseWorker\AddTagToChangelogReleaseWorker;
 use Symplify\MonorepoBuilder\Release\ReleaseWorker\PushNextDevReleaseWorker;
 use Symplify\MonorepoBuilder\Release\ReleaseWorker\PushTagReleaseWorker;
@@ -24,5 +26,17 @@ return static function (MBConfig $mbConfig): void {
         SetNextMutualDependenciesReleaseWorker::class,
         UpdateBranchAliasReleaseWorker::class,
         PushNextDevReleaseWorker::class,
+    ]);
+    $mbConfig->packageAliasFormat('<major>.<minor>.x-dev');
+    // what extra parts to add after merge?
+    $mbConfig->dataToAppend([
+        ComposerJsonSection::AUTOLOAD_DEV => [
+            'psr-4' => [
+                'Symplify\Tests\\' => 'tests',
+            ],
+        ],
+        ComposerJsonSection::REQUIRE_DEV => [
+            'phpstan/phpstan' => '^0.12',
+        ],
     ]);
 };

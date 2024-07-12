@@ -13,9 +13,5 @@
     },
     "require-dev": {
         "symplify/monorepo-builder": "^11.2"
-    },
-    "replace": {
-        "gusComponent\\ExtendSeparator\\": "self.version",
-        "gusComponent\\RelatedPosts\\": "self.version"
     }
 }

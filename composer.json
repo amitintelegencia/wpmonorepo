@@ -1,11 +1,21 @@
 {
+    "name": "intwp/wpmonorepo",
     "require": {
-        "some/dependency": "^1.0"
+        "php": "^7.2",
+        "symfony/dependency-injection": "^5.0",
+        "symfony/http-kernel": "^5.0"
     },
     "autoload": {
         "psr-4": {
-            "ExtendSeprator\\": "blocks/extend-seprator/",
-            "RelatedPosts\\": "blocks/related-posts/"
+            "gusComponent\\ExtendSeparator\\": "blocks/extend-separator/src",
+            "gusComponent\\RelatedPosts\\": "blocks/related-posts/src"
         }
+    },
+    "require-dev": {
+        "symplify/monorepo-builder": "^11.2"
+    },
+    "replace": {
+        "gusComponent\\ExtendSeparator\\": "self.version",
+        "gusComponent\\RelatedPosts\\": "self.version"
     }
 }

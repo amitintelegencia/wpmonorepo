@@ -4,8 +4,8 @@
     },
     "autoload": {
         "psr-4": {
-            "ExtendSeprator\\": "extend-seprator/",
-            "RelatedPosts\\": "related-posts/"
+            "ExtendSeprator\\": "blocks/extend-seprator/",
+            "RelatedPosts\\": "blocks/related-posts/"
         }
     }
 }

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/gus-carousel",
+  "version": "0.1.0",
+  "title": "Gus Carousel",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "attributes": {
+    "Images": {
+      "type": "array",
+      "default": []
+    },
+    "interval": {
+      "type": "number",
+      "default": 3
+    },
+    "CarouselAutoplayOption": {
+      "type": "boolean",
+      "default": false
+    },
+    "CarouselPauseOnHoverOption": {
+      "type": "boolean",
+      "default": false
+    },
+    "Direction": {
+      "type": "string",
+      "default": "rtl"
+    },
+    "ImagesPerSlideMob": {
+      "type": "number",
+      "default": 2
+    },
+    "ImagesPerSlideTab": {
+      "type": "number",
+      "default": 3
+    },
+    "ImagesPerSlideDesk": {
+      "type": "number",
+      "default": 5
+    },
+    "HideNavigationControls": {
+      "type": "boolean",
+      "default": false
+    },
+    "HideIndicators": {
+      "type": "boolean",
+      "default": false
+    },
+    "NavigationControlsPosition": {
+      "type": "string",
+      "default": "middle"
+    },
+    "IndicatorsIcontColor": {
+      "type": "string",
+      "default": "blue"
+    },
+    "IndicatorsActiveIconColor": {
+      "type": "string",
+      "default": "blue"
+    }
+  },
+  "textdomain": "gus-carousel",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

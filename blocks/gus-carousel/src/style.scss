@@ -1,0 +1,64 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@import "@splidejs/splide/css";
+
+.wp-block-create-block-gus-carousel {
+	.slide-image-container {
+		position: relative;
+		width: 100%;
+		height: auto;
+
+		.trash-icon {
+			cursor: pointer;
+			height: 1.5rem;
+			fill: #DF383E;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	.splide__arrows {
+		position: var(--navigation_arrow_top_bottom_position);
+		bottom: 0;
+		display: var(--hide-navigation-arrow);
+		justify-content: center;
+		width: 100%;
+
+		.splide__arrow {
+			transform: none;
+			position: var(--navigation_arrow_middle_position);
+			background: transparent;
+		}
+	}
+
+	.splide__pagination {
+		display: var(--hide-indicators);
+	}
+
+	.splide__pagination__page {
+		display: inline-block;
+		background: var(--pagination_icon_color);
+		border-radius: 50%;
+		padding: 0;
+		transition: transform .2s linear;
+		border: 2px solid var(--pagination_icon_color);
+		opacity: 1;
+		color: var(--pagination_icon_color);
+		font-size: 24px;
+		font-weight: bold;
+		color: #999;
+		font-family: "Abril Fatface", serif;
+	}
+
+	.splide__pagination__page.is-active {
+		background: var(--pagination_active_icon_color);
+		border: 2px solid var(--pagination_active_icon_color);
+	}
+
+}

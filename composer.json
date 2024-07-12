@@ -8,7 +8,9 @@
     "autoload": {
         "psr-4": {
             "gusComponent\\ExtendSeparator\\": "blocks/extend-separator/src",
-            "gusComponent\\RelatedPosts\\": "blocks/related-posts/src"
+            "gusComponent\\RelatedPosts\\": "blocks/related-posts/src",
+            "gusComponent\\GusCarousel\\": "blocks/gus-carousel/src"
+            
         }
     },
     "require-dev": {

@@ -1,0 +1,286 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/related-posts",
+  "version": "0.1.0",
+  "title": "Related Posts",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "color": {
+      "background": false,
+      "text": false,
+      "link": false,
+      "gradients": false
+    },
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "attributes": {
+    "postTypeValue": {
+      "type": "array",
+      "default": [
+        "post"
+      ]
+    },
+    "cptAllPostTypeValue": {
+      "type": "string",
+      "default": "post"
+    },
+    "taxonomyValue": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array"
+    },
+    "postImageIcon": {
+      "type": "string"
+    },
+    "postNumber": {
+      "type": "number",
+      "default": 6
+    },
+    "columnMob": {
+      "type": "number",
+      "default": 2
+    },
+    "columnTab": {
+      "type": "number",
+      "default": 2
+    },
+    "columnDesktop": {
+      "type": "number",
+      "default": 2
+    },
+    "postDescription": {
+      "type": "boolean",
+      "default": true
+    },
+    "postOrder": {
+      "type": "string"
+    },
+    "postOrderBy": {
+      "type": "string"
+    },
+    "PostSetCollection": {
+      "type": "array",
+      "default": []
+    },
+    "PostAllCategory": {
+      "type": "array",
+      "default": []
+    },
+    "characterLimit": {
+      "type": "number",
+      "default": 20
+    },
+    "featuredPost": {
+      "type": "boolean",
+      "default": false
+    },
+    "showTaxonomies": {
+      "type": "boolean",
+      "default": false
+    },
+    "showMedia": {
+      "type": "boolean",
+      "default": true
+    },
+    "showTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "headingContent": {
+      "type": "string",
+      "default": ""
+    },
+    "paragraphContent": {
+      "type": "string",
+      "default": ""
+    },
+    "headingTagLevel": {
+      "type": "number",
+      "default": 2
+    },
+    "headingTextColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "headingBgColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "paragraphTextColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "paragraphBgColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "headingTagNameLevel": {
+      "type": "number",
+      "default": 4
+    },
+    "paragraphFontSize": {
+      "type": "number",
+      "default": 1.05
+    },
+    "paragraphUnits": {
+      "type": "string",
+      "default": "rem"
+    },
+    "headingAlign": {
+      "type": "string",
+      "default": "start"
+    },
+    "paragraphAlign": {
+      "type": "string",
+      "default": "start"
+    },
+    "headingApperance": {
+      "type": "string",
+      "default": "none"
+    },
+    "paragraphApperance": {
+      "type": "string",
+      "default": "none"
+    },
+    "btntext": {
+      "type": "string"
+    },
+    "btntextAlign": {
+      "type": "string"
+    },
+    "btnurl": {
+      "type": "string",
+      "default": "https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/"
+    },
+    "btnlinkTarget": {
+      "type": "string",
+      "default": "_self"
+    },
+    "btnbackgroundColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "btnoutlineColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "bttnPaddingX": {
+      "type": "number",
+      "default": 0.2
+    },
+    "bttnPaddingY": {
+      "type": "number",
+      "default": 0.2
+    },
+    "borderWidth": {
+      "type": "number",
+      "default": 1
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 1
+    },
+    "btntextColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "btnHoverColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "btnHoverTextColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "btnAlign": {
+      "type": "string",
+      "default": "start"
+    },
+    "showButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "showParagraph": {
+      "type": "boolean",
+      "default": true
+    },
+    "showHeading": {
+      "type": "boolean",
+      "default": true
+    },
+    "postColor": {
+      "type": "boolean",
+      "default": true
+    },
+    "relatedPosts": {
+      "type": "string",
+      "default": "all"
+    },
+    "currentPostCategory": {
+      "type": "string",
+      "default": ""
+    },
+    "currentPostTags": {
+      "type": "number",
+      "default": 0
+    },
+    "postDateTextColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "readMoreClass": {
+      "type": "string"
+    },
+    "PostAttribute": {
+      "type": "string",
+      "default": "category"
+    },
+    "postsPerPage": {
+      "type": "number",
+      "default": 4
+    },
+    "pageNumber": {
+      "type": "number",
+      "default": 1
+    },
+    "cptAllPostPaginatedData": {
+      "type": "array",
+      "default": []
+    },
+    "PaginationFontSize": {
+      "type": "integer",
+      "default": 20
+    },
+    "paginationTextColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "paginationBgColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "listingFilter": {
+      "type": "array",
+      "default": []
+    },
+    "listingCategories": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "textdomain": "cpt-content-group",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}

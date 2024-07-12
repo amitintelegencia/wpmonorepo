@@ -1,0 +1,11 @@
+{
+    "require": {
+        "some/dependency": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PextendSeprator\\": "extend-seprator/",
+            "RelatedPosts\\": "related-posts/"
+        }
+    }
+}
